@@ -1,3 +1,3 @@
 # Joe Eleshuk's Website Readme!
 
-I'll put more stuff here later
+Website that provides a quick and appealing look at my projects
