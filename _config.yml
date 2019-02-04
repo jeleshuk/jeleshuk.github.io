@@ -1,2 +1,3 @@
 name: Joseph D. Eleshuk, Software Developer
 markdown: kramdown
+permalink: /blog/:year/:month/:day/:title
