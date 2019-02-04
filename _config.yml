@@ -17,8 +17,8 @@ title: Joe Eleshuk
 email: jeleshuk@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Meh descript
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "www.jeleshuk.com" # the subpath of your site, e.g. /blog
+url: "www.jeleshuk.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
 
