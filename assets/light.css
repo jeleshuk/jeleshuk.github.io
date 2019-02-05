@@ -27,22 +27,43 @@ h2 {
 
 @media screen and (min-width: 600px) {
   p {
-    font-size: 80px;
+    font-size: 16px;
   }
 }
-
 @media screen and (max-width: 600px) {
+  p {
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 600px) {
   h1 {
     font-size: 30px;
   }
 }
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 60px;
+  }
+}
+@media screen and (min-width: 600px) {
+  h2 {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 600px) {
+  h2 {
+    font-size: 40px;
+  }
+}
+
+
 
 html {
     background-color: var(--delta);
 }
 
 .Header {
-    border-radius: 60px 5px;
+    border-radius: 30px 5px;
     background: var(--alpha);
     padding-left: 60px;
     padding-top: 1px;
@@ -53,27 +74,29 @@ html {
 .left {
     background-color: var(--alpha);
     float: left;
-    border-radius: 5px 60px;
+    border-radius: 5px 30px;
     width: 60%;
+    padding: 30px;
+    padding-right: 30px;
 }
 
 .main {
     background-color: var(--alpha);
     float: left;
-    border-radius: 5px 60px;
+    border-radius: 5px 30px;
     width: 100%;
 }
 
 .right {
     background-color: var(--alpha);
-    border-radius: 5px 60px;
+    border-radius: 5px 30px;
     float: left;
     width: 40%;
 }
 
 .footer {
     background-color: var(--alpha);
-    border-radius: 5px 60px;
+    border-radius: 5px 30px;
     float: left;
     width: 100%;
     text-align: center;
