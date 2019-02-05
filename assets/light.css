@@ -72,13 +72,15 @@ html {
     margin-top: 7px;
 }
 
-@media screen and (max-width: 900px) {
-
+@media screen and (max-width: 961px) {
     .right,
     .main,
     .left,
     .footer,
     .Header {
         width: 100%;
+    }
+    p {
+        30px;
     }
 }
