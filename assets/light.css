@@ -1,5 +1,12 @@
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:root {
+    --alpha: #fff;
+    --beta: #c43d6c;
+    --gamma: #3ec767;
+    --delta: #000;
 }
 
 p {
@@ -18,53 +25,68 @@ h2 {
     font-size: 25px;
 }
 
+@media screen and (min-width: 600px) {
+  p {
+    font-size: 80px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 30px;
+  }
+}
 
 html {
-    background-color: #000;
+    background-color: var(--delta);
 }
 
 .Header {
     border-radius: 60px 5px;
-    background: #fff;
-    float: center;
-    text-align: center;
+    background: var(--alpha);
+    padding-left: 60px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    margin-bottom: 7px;
 }
 
-.Footer {
-    border-radius: 5px 60px;
-    background: #c43d6c;
-    text-align: center;
-}
-
-.Body {
-  display: grid;
-    padding: 5px;
-}
-
-.column {
+.left {
+    background-color: var(--alpha);
     float: left;
-}
-.column.left {
-    background: #fff;
-    padding: 15px;
-    width: 66.66%;
-    border-radius: 15px 5px 5px 15px;
+    border-radius: 5px 60px;
+    width: 60%;
 }
 
-.column.right {
-    background: #3ec767;
-    padding: 15px;
-    width: 33.33%;
-    border-radius: 5px 15px 15px 5px;
-}
-
-.row:after {
-  content: "";
-  clear: both;
-}
-
-@media screen and (max-width: 600px) {
-  .column.left, .column.right {
+.main {
+    background-color: var(--alpha);
+    float: left;
+    border-radius: 5px 60px;
     width: 100%;
-  }
+}
+
+.right {
+    background-color: var(--alpha);
+    border-radius: 5px 60px;
+    float: left;
+    width: 40%;
+}
+
+.footer {
+    background-color: var(--alpha);
+    border-radius: 5px 60px;
+    float: left;
+    width: 100%;
+    text-align: center;
+    margin-top: 7px;
+}
+
+@media screen and (max-width: 900px) {
+
+    .right,
+    .main,
+    .left,
+    .footer,
+    .Header {
+        width: 100%;
+    }
 }
