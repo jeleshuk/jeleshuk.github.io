@@ -103,11 +103,8 @@
 <script>
     const queryString = window.location.search;
 	console.log(queryString);
-	const product = urlParams.get('article')
-	console.log(product);
-
-	var articleID = getUrlParam('article','0');
-    var urlParam = "/articles/" + articleId + ".html";
+	var articleNumber = queryString.substring(9,13);
+    var urlParam = "/articles/" + articleNumber + ".html";
 	document.getElementById("articleContainer").setAttribute('w3-include-html', urlParam);
 </script>
 <script>
