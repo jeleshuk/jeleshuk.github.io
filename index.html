@@ -104,11 +104,13 @@
 <p id="header" w3-include-html="/pages/footer.html"></p> 
 
 </div>
-</body>
-</html>
 
 <script>
 	var articleId = getQueryVariable('article');
-	document.getElementById("demo").w3-include-html = "/articles/" + articleId + ".html";
+	if (articleID === !null){
+		document.getElementById("demo").w3-include-html = "/articles/" + articleId + ".html";
+	}
 	w3.includeHTML();
 </script>
+</body>
+</html>
