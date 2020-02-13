@@ -1,5 +1,134 @@
----
-layout: default
----
-<h1>Hello!</h1>
-<p>This is my personal site where I host links to my projects.</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Blog Template</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script src="resources/w3.js"></script>
+  <script>
+	function getUrlParam(parameter){
+		var urlparameter = "404";
+		if(window.location.href.indexOf(parameter) > -1){
+			urlparameter = getUrlVars()[parameter];
+			}
+		return urlparameter;
+	}
+  </script>
+  <style>
+	.greenStripeText{
+		color: #40BF80;
+	}
+	.greenStripeButton{
+		background-color: #40BF80;
+	}
+	.nav-item .nav-link .active{
+		background-color: #40BF80;
+	}
+	#postContainer p{
+		text-indent: 3em;
+	}
+  </style>
+</head>
+<body>
+<div class="jumbotron jumbotron-fluid mb-0">
+	<div class="container">
+  </div>
+</div>
+<nav class="navbar navbar-expand-lg bg-dark navbar-dark sticky-top shadow">
+  <a class="navbar-brand greenStripeText" style="color: #40BF80;" href="#">Home</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+	  <ul class="navbar-nav mr-auto">
+		<li class="nav-item">
+		  <a class="nav-link text-light" href="#">Latest Post</a>
+		</li>
+		<li class="nav-item">
+		  <a class="nav-link text-light" href="#">All Posts</a>
+		</li>
+		<li class="nav-item">
+		  <a class="nav-link text-light" href="#">Projects</a>
+		</li>
+		<li class="nav-item">
+		  <a class="nav-link text-light" href="#">About</a>
+		</li>
+	  </ul>
+	  <form class="form-inline my-2 my-lg-0" action="#">
+		<input class="form-control mr-sm-2" type="text" placeholder="Search">
+		<button class="btn btn-success greenStripeButton" type="submit">Search</button>
+	  </form>
+  </div>
+</nav>
+<div class="container-fluid pl-5 pr-5" >
+  <div class="row shadow m-5">
+	<div class="col-xl-9 rounded-left p-5" id='postContainer'>
+		<h1>
+			How to Make a Very Simple Blogging System
+		</h1>
+		<h4 class="text-muted">
+			By Joseph Eleshuk
+		</h4>
+		<p>
+		</p>
+		<h3>
+			Overview
+		</h3>
+		<p>
+			What you are reading right now is simply the content of a plain text file loaded onto this HTML page using Javascript.
+			Fun times abound!
+			Well, if you can get it working that is.
+			Also, should have enough text the footer stays on the bottom
+		</p>
+		<h3>
+			Lorem Ipsum
+		</h3>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sollicitudin condimentum neque, at sagittis neque facilisis a. Proin sagittis lacus ut nibh luctus elementum. Fusce ornare turpis ex, id pharetra nibh finibus eu. Aliquam pulvinar sodales odio ac venenatis. Suspendisse quis quam at erat tempus consequat. Vestibulum ac neque ut libero venenatis tempus sed quis urna. Suspendisse potenti. Curabitur sodales magna nec accumsan consequat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut porta dolor nibh. Donec consectetur ipsum ut sollicitudin interdum. Maecenas eleifend eleifend volutpat.
+		</p>
+		
+		<p w3-include-html="/articles/1.html"></p> 
+
+		<script>
+			w3.includeHTML();
+		</script>
+	</div>
+	<div class="col-xl-3 rounded-right p-5" id="sideContainer">
+			<!-- Nav pills -->
+			<ul class="nav nav-pills nav-justified flex-column">
+			  <li class="nav-item">
+				<a class="nav-link active" data-toggle="pill" href="#home">Home</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" data-toggle="pill" href="#menu1">Menu 1</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" data-toggle="pill" href="#menu2">Menu 2</a>
+			  </li>
+			</ul>
+			<!-- Tab panes -->
+			<div class="tab-content">
+			  <div class="tab-pane container active" id="home">...</div>
+			  <div class="tab-pane container fade" id="menu1">...</div>
+			  <div class="tab-pane container fade" id="menu2">...</div>
+			</div>
+	</div>
+  </div>
+</div>
+<div id='footer'>
+	<div class="container-fluid mt-5 mb-0 pt-5 pb-5 bg-dark text-light">
+		<div class="d-flex justify-content-center">
+		  <h1 class="greenStripeText" >Footer</h1>
+	  </div>
+	  <div class="d-flex justify-content-center">
+		  <p>A jumbo start</p>
+	  </div>
+	</div>
+</div>
+</div>
+</body>
+</html>
