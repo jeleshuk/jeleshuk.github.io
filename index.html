@@ -66,7 +66,7 @@
 			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sollicitudin condimentum neque, at sagittis neque facilisis a. Proin sagittis lacus ut nibh luctus elementum. Fusce ornare turpis ex, id pharetra nibh finibus eu. Aliquam pulvinar sodales odio ac venenatis. Suspendisse quis quam at erat tempus consequat. Vestibulum ac neque ut libero venenatis tempus sed quis urna. Suspendisse potenti. Curabitur sodales magna nec accumsan consequat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut porta dolor nibh. Donec consectetur ipsum ut sollicitudin interdum. Maecenas eleifend eleifend volutpat.
 		</p>
 		
-		<p id="articleContainer" w3-include-html="/articles/1.html"></p> 
+		<p id="articleContainer" w3-include-html=""></p> 
 
 	</div>
 	<div class="col-xl-3 rounded-right p-5" id="sideContainer">
@@ -99,8 +99,8 @@
 <script>
 	var articleId = getQueryVariable('article');
 	var urlParam = "/articles/" + articleId + ".html";
-	if (articleID === !null){
-		document.getElementById("articleContainer").w3-include-html = urlParam;
+	if (articleID == !null){
+		document.getElementById("articleContainer").w3-include-html += urlParam;
 	}
 </script>
 <script>
