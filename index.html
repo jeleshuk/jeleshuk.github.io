@@ -99,7 +99,7 @@
 <script>
 	var articleId = getQueryVariable('article');
 	var urlParam = "/articles/" + articleId + ".html";
-	if (articleID == !null){
+	if (articleID !== "undefined"){
 		document.getElementById("articleContainer").setAttribute('w3-include-html', urlParam);
 	}
 </script>
