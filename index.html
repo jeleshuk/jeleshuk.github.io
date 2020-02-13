@@ -100,7 +100,7 @@
 	var articleId = getQueryVariable('article');
 	var urlParam = "/articles/" + articleId + ".html";
 	if (articleID == !null){
-		document.getElementById("articleContainer").w3-include-html += urlParam;
+		document.getElementById("articleContainer").setAttribute('w3-include-html', urlParam);
 	}
 </script>
 <script>
