@@ -97,11 +97,11 @@
 </div>
 
 <script>
-	var articleId = getQueryVariable('article');
-	var urlParam = "/articles/" + articleId + ".html";
-	if (articleID !== "undefined"){
-		document.getElementById("articleContainer").setAttribute('w3-include-html', urlParam);
-	}
+	var url_string = window.location.href; //window.location.href
+	var url = new URL(url_string);
+	var articleID = url.searchParams.get("article");
+    var urlParam = "/articles/" + articleId + ".html";
+	document.getElementById("articleContainer").setAttribute('w3-include-html', urlParam);
 </script>
 <script>
 	w3.includeHTML();
